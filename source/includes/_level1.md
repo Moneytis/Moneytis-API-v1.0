@@ -47,7 +47,7 @@ countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
 &paymentAmount=100"
 ```
 
-> The above command returns JSON structured like this:
+> The above command returned JSON structured like this:
 
 ```json
 { 
