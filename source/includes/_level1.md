@@ -41,11 +41,6 @@ Either fill paymentAmount or receptionAmount.
 
 #### 2. Response
 
-<aside class="warning">
-N.B. : PaymentAmount has to be all fee included. This is the exact amount the user will pay.
-</aside>
-
-
 ```shell
 curl "http://example.com/api/v1.0/quote?
 countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
@@ -56,57 +51,65 @@ countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
 
 ```json
 { 
-  "rate" : 4.2332,
+  "rate" : 21.2332,
   "mtos" : {
    "transferwise" : {
-      "options": [ {
-            "optionId": "666f6f2d6261722d71757578",
-            "paymentMethod":"LOCALBANK",
-            "receptionMethod":"LOCALBANK",
-            "paymentAmount":100,
-            "receptionAmount":1784.45,
-            "isEstimatedAmount":true,
-            "rate":18.02299,
-            "quoteExpiration":12569537329,
-            "fee":1,
-            "time":{"b":true,"d":1},
-            "min":10,
-            "max":1000000000
-         } ]
+      "options": [    {
+          "optionId": "666f6f2d6261722d71757578",
+          "paymentMethod":"LOCALBANK",
+          "receptionMethod":"LOCALBANK",
+          "isEstimatedAmount":false,
+          "min":10,
+          "max":1000000000,
+          "optionDetails" :
+              {
+                  "paymentAmount":100,
+                  "receptionAmount":1982.27,  
+                  "rate":20.02299,
+                  "quoteExpiration":12569537329,  
+                  "fee":1,
+                  "time":{"b":true,"d":3}
+              }
+      } ]
      },
     "westernunion": {
       "options": [ {
-            "optionId": "236f6f2d6261722d71757578",
-            "paymentMethod":"LOCALBANK",
-            "receptionMethod":"LOCALBANK",
-            "paymentAmount":100,
-            "receptionAmount":1684.45,
-            "isEstimatedAmount":true,
-            "rate":18.02299,
-            "quoteExpiration":12569537329,
-            "fee":1,
-            "time":{"b":true,"d":1},
-            "min":10,
-            "max":1000000000
+          "optionId": "666f6f2d6261722d71757578",
+          "paymentMethod":"LOCALBANK",
+          "receptionMethod":"CASH",
+          "isEstimatedAmount":false,
+          "min":10,
+          "max":1000000000,
+          "optionDetails" :
+              {
+                  "paymentAmount":100,
+                  "receptionAmount":1684.45,  
+                  "rate":18.02299,
+                  "quoteExpiration":12569537329,  
+                  "fee":1,
+                  "time":{"b":true,"d":1}
+              }
          } ]
       }
   },
   "banks":{
       "averageBank" : {
          "options": [ {
-            "optionId": "236f6f2d6261722d717575232",
-            "paymentMethod":"LOCALBANK",
-            "receptionMethod":"LOCALBANK",
-            "paymentAmount":100,
-            "receptionAmount":1654.45,
-            "isEstimatedAmount":true,
-            "rate":18.02299,
-            "quoteExpiration":12569537329,
-            "fee":20,
-            "time":{"b":true,"d":1},
-            "min":10,
-            "max":1000000000
-           } ]
+          "paymentMethod":"LOCALBANK",
+          "receptionMethod":"CASH",
+          "isEstimatedAmount":false,
+          "min":10,
+          "max":1000000000,
+          "optionDetails" :
+              {
+                  "paymentAmount":100,
+                  "receptionAmount":1361.83,  
+                  "rate":17.02299,
+                  "quoteExpiration":12569537329,  
+                  "fee":20,
+                  "time":{"b":true,"d":5}
+              }
+         } ]
         }
   },
  "errors": {
