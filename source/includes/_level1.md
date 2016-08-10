@@ -68,7 +68,8 @@ countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
                   "rate":20.02299,
                   "quoteExpiration":12569537329,  
                   "fee":1,
-                  "time":{"b":true,"d":3}
+                  "score": 8.663,
+                  "time":{"b":true,"d":1,"receiveBy":"2016-08-12T15:03:47.070Z"}
               }
       } ]
      },
@@ -87,7 +88,8 @@ countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
                   "rate":18.02299,
                   "quoteExpiration":12569537329,  
                   "fee":1,
-                  "time":{"b":true,"d":1}
+                  "score": 5.1213,
+                  "time":{"b":true,"d":1,"receiveBy":"2016-08-12T15:03:47.070Z"}
               }
          } ]
       }
@@ -107,7 +109,8 @@ countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
                   "rate":17.02299,
                   "quoteExpiration":12569537329,  
                   "fee":20,
-                  "time":{"b":true,"d":5}
+                  "score": 3,
+                  "time":{"b":true,"d":5,"receiveBy":"2016-08-16T15:03:47.070Z"}
               }
          } ]
         }
@@ -183,6 +186,7 @@ fee	|	decimal		| Mandatory	|	Fixed fees applied to the transaction
  | | | This fee is calculated with the formula : (paymentAmount - fee)*rate = receptionAmount
  | | | (expressed in currencyFrom)
 time	|	object		| Mandatory	|	An estimation of the time required to receive the money-- see below
+score    |   decimal    |   Optional    |   Score (between 0 and 10) given to the option regarding the amounts, time, and MTO’s easiness of use
 
 
 * Time
@@ -191,6 +195,7 @@ Name | Type | Requirement | Description
 ----- | ---- | ----- | ----
 d	|	integer	|	Mandatory	|	Number of days estimated between the transaction creation and the delivery
 b	|	boolean	|	Mandatory	|	true if the days are business days
+receiveBy | date  | Mandatory | Estimated date of the delivery
 
 
 * Errors JSON Object
