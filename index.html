@@ -327,7 +327,8 @@ countryFrom=FR&amp;currencyFrom=EUR&amp;countryTo=MX&amp;currencyTo=MXN
                   </span><span class="nt">"rate"</span><span class="p">:</span><span class="mf">20.02299</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"quoteExpiration"</span><span class="p">:</span><span class="mi">12569537329</span><span class="p">,</span><span class="w">  
                   </span><span class="nt">"fee"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-                  </span><span class="nt">"time"</span><span class="p">:{</span><span class="nt">"b"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">"d"</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span><span class="w">
+                  </span><span class="nt">"score"</span><span class="p">:</span><span class="w"> </span><span class="mf">8.663</span><span class="p">,</span><span class="w">
+                  </span><span class="nt">"time"</span><span class="p">:{</span><span class="nt">"b"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">"d"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nt">"receiveBy"</span><span class="p">:</span><span class="s2">"2016-08-12T15:03:47.070Z"</span><span class="p">}</span><span class="w">
               </span><span class="p">}</span><span class="w">
       </span><span class="p">}</span><span class="w"> </span><span class="p">]</span><span class="w">
      </span><span class="p">},</span><span class="w">
@@ -346,7 +347,8 @@ countryFrom=FR&amp;currencyFrom=EUR&amp;countryTo=MX&amp;currencyTo=MXN
                   </span><span class="nt">"rate"</span><span class="p">:</span><span class="mf">18.02299</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"quoteExpiration"</span><span class="p">:</span><span class="mi">12569537329</span><span class="p">,</span><span class="w">  
                   </span><span class="nt">"fee"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-                  </span><span class="nt">"time"</span><span class="p">:{</span><span class="nt">"b"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">"d"</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span><span class="w">
+                  </span><span class="nt">"score"</span><span class="p">:</span><span class="w"> </span><span class="mf">5.1213</span><span class="p">,</span><span class="w">
+                  </span><span class="nt">"time"</span><span class="p">:{</span><span class="nt">"b"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">"d"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nt">"receiveBy"</span><span class="p">:</span><span class="s2">"2016-08-12T15:03:47.070Z"</span><span class="p">}</span><span class="w">
               </span><span class="p">}</span><span class="w">
          </span><span class="p">}</span><span class="w"> </span><span class="p">]</span><span class="w">
       </span><span class="p">}</span><span class="w">
@@ -366,7 +368,8 @@ countryFrom=FR&amp;currencyFrom=EUR&amp;countryTo=MX&amp;currencyTo=MXN
                   </span><span class="nt">"rate"</span><span class="p">:</span><span class="mf">17.02299</span><span class="p">,</span><span class="w">
                   </span><span class="nt">"quoteExpiration"</span><span class="p">:</span><span class="mi">12569537329</span><span class="p">,</span><span class="w">  
                   </span><span class="nt">"fee"</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="w">
-                  </span><span class="nt">"time"</span><span class="p">:{</span><span class="nt">"b"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">"d"</span><span class="p">:</span><span class="mi">5</span><span class="p">}</span><span class="w">
+                  </span><span class="nt">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                  </span><span class="nt">"time"</span><span class="p">:{</span><span class="nt">"b"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="nt">"d"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="nt">"receiveBy"</span><span class="p">:</span><span class="s2">"2016-08-16T15:03:47.070Z"</span><span class="p">}</span><span class="w">
               </span><span class="p">}</span><span class="w">
          </span><span class="p">}</span><span class="w"> </span><span class="p">]</span><span class="w">
         </span><span class="p">}</span><span class="w">
@@ -641,6 +644,12 @@ countryFrom=FR&amp;currencyFrom=EUR&amp;countryTo=MX&amp;currencyTo=MXN
 <td>Mandatory</td>
 <td>An estimation of the time required to receive the money&ndash; see below</td>
 </tr>
+<tr>
+<td>score</td>
+<td>decimal</td>
+<td>Optional</td>
+<td>Score (between 0 and 10) given to the option regarding the amounts, time, and MTO’s easiness of use</td>
+</tr>
 </tbody></table>
 
 <ul>
@@ -666,6 +675,12 @@ countryFrom=FR&amp;currencyFrom=EUR&amp;countryTo=MX&amp;currencyTo=MXN
 <td>boolean</td>
 <td>Mandatory</td>
 <td>true if the days are business days</td>
+</tr>
+<tr>
+<td>receiveBy</td>
+<td>date</td>
+<td>Mandatory</td>
+<td>Estimated date of the delivery</td>
 </tr>
 </tbody></table>
 
