@@ -69,7 +69,7 @@ countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
                   "quoteExpiration":12569537329,  
                   "fee":1,
                   "score": 8.663,
-                  "time":{"b":true,"d":1,"receiveBy":"2016-08-12T15:03:47.070Z"}
+                  "time":{"b":true,"d":1,"receiveBy":"2016-08-12T15:03:47.070Z","fromToday":3}
               }
       } ]
      },
@@ -89,7 +89,7 @@ countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
                   "quoteExpiration":12569537329,  
                   "fee":1,
                   "score": 5.1213,
-                  "time":{"b":true,"d":1,"receiveBy":"2016-08-12T15:03:47.070Z"}
+                  "time":{"b":true,"d":1,"receiveBy":"2016-08-12T15:03:47.070Z","fromToday":3}
               }
          } ]
       }
@@ -110,7 +110,7 @@ countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
                   "quoteExpiration":12569537329,  
                   "fee":20,
                   "score": 3,
-                  "time":{"b":true,"d":5,"receiveBy":"2016-08-16T15:03:47.070Z"}
+                  "time":{"b":true,"d":5,"receiveBy":"2016-08-16T15:03:47.070Z","fromToday":7}
               }
          } ]
         }
@@ -196,6 +196,7 @@ Name | Type | Requirement | Description
 d	|	integer	|	Mandatory	|	Number of days estimated between the transaction creation and the delivery
 b	|	boolean	|	Mandatory	|	true if the days are business days
 receiveBy | date  | Mandatory | Estimated date of the delivery
+fromToday | integer | Mandatory | Number of days estimated between the transaction creation and the delivery with the business taking in count
 
 
 * Errors JSON Object
