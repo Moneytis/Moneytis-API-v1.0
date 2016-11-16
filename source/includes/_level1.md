@@ -74,7 +74,24 @@ countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
       } ]
      },
     "westernunion": {
-      "options": [ {
+      "options": [{
+          "optionId": "666f6f2d6261722d7898590",
+          "paymentMethod":"DEBITCARD",
+          "receptionMethod":"CASH",
+          "isEstimatedAmount":false,
+          "min":10,
+          "max":1000,
+          "optionDetails" :
+              {
+                  "paymentAmount":100,
+                  "receptionAmount":1622.07,  
+                  "rate":18.02299,
+                  "quoteExpiration":12569537329,  
+                  "fee":10,
+                  "score": 6.1213,
+                  "time":{"b":true,"d":0,"receiveBy":"2016-08-08T15:03:47.070Z","fromToday":0}
+              }
+         }, {
           "optionId": "666f6f2d6261722d71757578",
           "paymentMethod":"LOCALBANK",
           "receptionMethod":"CASH",
