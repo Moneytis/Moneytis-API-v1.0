@@ -19,7 +19,7 @@ Name	|	Description
 ----- | ----
 Path	|	/quote
 Method	|	GET
-Authentication	|	Optional
+Authentication	|	Mandatory
 Description	|	Get options for a corridor and an amount
 
 
@@ -44,7 +44,7 @@ Either fill paymentAmount or receptionAmount.
 ```shell
 curl "https://api.moneytis.com/quote?
 countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
-&paymentAmount=100"
+&paymentAmount=100&client_id=0123456789abcdefgh&client_secret=abcdefgh0123456789"
 ```
 
 > The above command returns JSON structured like this:

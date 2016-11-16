@@ -12,6 +12,7 @@ includes:
   - standards
   - level1
   - dictionnary
+  - authentication
   
 search: true
 ---
