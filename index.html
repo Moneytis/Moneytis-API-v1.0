@@ -240,7 +240,7 @@
 </tr>
 <tr>
 <td>Authentication</td>
-<td>Optional</td>
+<td>Mandatory</td>
 </tr>
 <tr>
 <td>Description</td>
@@ -303,7 +303,7 @@ Either fill paymentAmount or receptionAmount.
 <h4 id="2-response">2. Response</h4>
 <pre class="highlight shell"><code>curl <span class="s2">"https://api.moneytis.com/quote?
 countryFrom=FR&amp;currencyFrom=EUR&amp;countryTo=MX&amp;currencyTo=MXN
-&amp;paymentAmount=100"</span>
+&amp;paymentAmount=100&amp;client_id=0123456789abcdefgh&amp;client_secret=abcdefgh0123456789"</span>
 </code></pre>
 
 <blockquote>
@@ -764,6 +764,15 @@ countryFrom=FR&amp;currencyFrom=EUR&amp;countryTo=MX&amp;currencyTo=MXN
 <li>BILLPAY</li>
 <li>MAIL</li>
 <li>PREPAIDCARD</li>
+</ul>
+
+          <h1 id="authentication">Authentication</h1>
+
+<p>The authentication is made with two parameters given in the query for every GET call :</p>
+
+<ul>
+<li>client_id</li>
+<li>client_secret</li>
 </ul>
 
       </div>
