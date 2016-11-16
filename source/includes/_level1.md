@@ -42,7 +42,7 @@ Either fill paymentAmount or receptionAmount.
 #### 2. Response
 
 ```shell
-curl "http://example.com/api/v1.0/quote?
+curl "https://api.moneytis.com/quote?
 countryFrom=FR&currencyFrom=EUR&countryTo=MX&currencyTo=MXN
 &paymentAmount=100"
 ```
